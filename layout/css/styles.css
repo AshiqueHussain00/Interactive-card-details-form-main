@@ -17,13 +17,13 @@ main {
     display: flex;
 }
 
-.desktop-bg {
+#desktop-bg {
     display: block;
     height: 46.4rem;
     width: 47rem;
 }
 
-.mobile-bg {
+#mobile-bg {
     display: none;
 }
 
@@ -258,18 +258,19 @@ button[type="submit"]:hover {
 }
 
 /* Responsive Styles (Adjust as needed) */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     main{
         display: block;
     }
-    .contain .desktop-bg {
+    .contain #desktop-bg {
         display: none;
     }
 
-    .contain .mobile-bg {
+    .contain #mobile-bg {
         display: block;
         z-index: -1;
-        height: 18rem;
+        height: 40vh;
+        width: 80vh;
     }
 
     .card-container-2 {
@@ -385,8 +386,8 @@ button[type="submit"]:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1.5rem;
-        padding: 10px;
+        margin: 1.4rem;
+        padding: 30px;
     }
     
     #payment-form {
