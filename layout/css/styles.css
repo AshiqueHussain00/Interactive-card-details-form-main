@@ -258,10 +258,12 @@ button[type="submit"]:hover {
 }
 
 /* Responsive Styles (Adjust as needed) */
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
     main{
         display: block;
+        
     }
+   
     .contain #desktop-bg {
         display: none;
         
@@ -269,6 +271,7 @@ button[type="submit"]:hover {
 
     .contain #mobile-bg {
         display: block;
+        width: 100%;
         z-index: -1;
        
     }

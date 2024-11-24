@@ -11,69 +11,71 @@
 
 <body>
     <main class="contain">
-        <img src="images/bg-main-mobile.png" alt="Mobile png" id="mobile-bg"   height="270vh" width="500vh" >
+        <img src="images/bg-main-mobile.png" alt="Mobile png" id="mobile-bg" height="270vh" width="500vh">
         <img src="images/bg-main-desktop.png" alt="Desktop png" id="desktop-bg">
 
+        <div class="card-container-1">
 
-        <div class="card-container">
-            <div class="card-front">
-                <div class="circles"> <img id="img-1" src="images/card-logo.svg" alt="Logo Svg">
-                </div>
-                <div class="card-number" id="cardNumberDisplay">0000 0000 0000 0000</div>
-                <div class="card-info">
-                    <span class="card-holder" id="cardHolderDisplay">JANE APPLESEED</span>
-                    <span class="expiry" id="expiryDateDisplay">00/00</span>
-                </div>
-            </div>
-            <div class="card-back">
-                <div class="black-bar"></div>
-                <div class="cvc" id="cvcDisplay">000</div>
-            </div>
-            <div class="card-container-2">
-                <div class="card">
-                    <img src="images/bg-card-front.png" alt="Front of Card" class="card-image-1">
-                </div>
-                <div class="card">
-                    <img src="images/bg-card-back.png" alt="Back of Card" class="card-image-2">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <form id="payment-form">
-                <div class="input-group">
-                    <label for="cardholder-name">CARDHOLDER NAME</label>
-                    <input type="text" id="cardholder-name" placeholder="e.g. Jane Appleseed" required>
-                    <span class="error" id="name-error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="card-number">CARD NUMBER</label>
-                    <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" inputmode="numeric"
-                        pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" required>
-                    <span class="error" id="card-number-error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="exp-date">EXP. DATE (MM/YY)</label>
-                    <div class="date-inputs">
-                        <input type="number" id="exp-month" placeholder="MM" min="1" max="12" required>
-                        <input type="number" id="exp-year" placeholder="YY" min="24" max="99" required>
-                        <span class="error" id="exp-date-error"></span>
+            <div class="card-container">
+                <div class="card-front">
+                    <div class="circles"> <img id="img-1" src="images/card-logo.svg" alt="Logo Svg">
+                    </div>
+                    <div class="card-number" id="cardNumberDisplay">0000 0000 0000 0000</div>
+                    <div class="card-info">
+                        <span class="card-holder" id="cardHolderDisplay">JANE APPLESEED</span>
+                        <span class="expiry" id="expiryDateDisplay">00/00</span>
                     </div>
                 </div>
-                <div class="input-group">
-                    <label for="cvc">CVC</label>
-                    <input type="number" id="cvc" placeholder="e.g. 123" min="100" max="999" required>
-                    <span class="error" id="cvc-error"></span>
+                <div class="card-back">
+                    <div class="black-bar"></div>
+                    <div class="cvc" id="cvcDisplay">000</div>
                 </div>
-                <button type="submit">Confirm</button>
-            </form>
+                <div class="card-container-2">
+                    <div class="card">
+                        <img src="images/bg-card-front.png" alt="Front of Card" class="card-image-1">
+                    </div>
+                    <div class="card">
+                        <img src="images/bg-card-back.png" alt="Back of Card" class="card-image-2">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <form id="payment-form">
+                    <div class="input-group">
+                        <label for="cardholder-name">CARDHOLDER NAME</label>
+                        <input type="text" id="cardholder-name" placeholder="e.g. Jane Appleseed" required>
+                        <span class="error" id="name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="card-number">CARD NUMBER</label>
+                        <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" inputmode="numeric"
+                            pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" required>
+                        <span class="error" id="card-number-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="exp-date">EXP. DATE (MM/YY)</label>
+                        <div class="date-inputs">
+                            <input type="number" id="exp-month" placeholder="MM" min="1" max="12" required>
+                            <input type="number" id="exp-year" placeholder="YY" min="24" max="99" required>
+                            <span class="error" id="exp-date-error"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" placeholder="e.g. 123" min="100" max="999" required>
+                        <span class="error" id="cvc-error"></span>
+                    </div>
+                    <button type="submit">Confirm</button>
+                </form>
 
-            <div class="success-message" style="display: none;">
-                <div class="checkmark-circle">
-                    <div class="checkmark"></div>
+                <div class="success-message" style="display: none;">
+                    <div class="checkmark-circle">
+                        <div class="checkmark"></div>
+                    </div>
+                    <h2>THANK YOU!</h2>
+                    <p>We've added your card details</p>
+                    <button id="continue-btn">Continue</button>
                 </div>
-                <h2>THANK YOU!</h2>
-                <p>We've added your card details</p>
-                <button id="continue-btn">Continue</button>
             </div>
         </div>
     </main>
